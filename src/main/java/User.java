@@ -23,6 +23,10 @@ public class User {
         this.userAge = userAge;
     }
 
+    public void doSomething (){
+        System.out.println("Do something!");
+    }
+
     @Override
     public String toString() {
         return "Name: " + this.userName + "  " + "Age: " + this.userAge;
@@ -31,5 +35,6 @@ public class User {
     public static void main(String[] args) {
         User user = new User("Alex", 28);
         System.out.println(user.toString());
+        user.doSomething();
     }
 }
